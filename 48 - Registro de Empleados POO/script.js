@@ -20,7 +20,7 @@ function agregarEmpleado(){
 
     alert("Empleado ha sido Generado");
 
-    //limpiarCampos();
+    limpiarCampos();
 
 }
 
@@ -33,4 +33,12 @@ function mostrarEmpleados(){
         listado = listado + "\n";
     }
     alert(listado)
+}
+
+function limpiarCampos(){
+    document.getElementById("txtLegajo").value = "";
+    document.getElementById("txtNombre").value = "";
+    document.getElementById("txtApellido").value = "";
+    document.getElementById("txtNacimiento").value = "";
+    document.getElementById("txtCargo").value = "";
 }
