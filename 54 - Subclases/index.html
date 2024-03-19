@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subclases</title>
+</head>
+<body>
+    <script>
+        class Deportista{
+            constructor(nombre, apellido){
+                this.nombre = nombre;
+                this.apellido = apellido;
+            }
+
+            datos(){
+                return `soy un deportista genérico`;
+            }
+        }
+
+        class Futbolista extends Deportista{
+            constructor(nombre, apellido, goles){
+                super(nombre, apellido);
+                this.goles = goles;
+            }
+
+            datos(){
+                return `Hola me llamo ${this.nombre} ${this.apellido} y he marcado ${this.goles}`;
+            }
+        }
+    </script>
+</body>
+</html>
